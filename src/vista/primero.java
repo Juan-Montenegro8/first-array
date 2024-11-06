@@ -3,19 +3,19 @@ import java.util.*;
 public class primero {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner (System.in);
+        Scanner TextoScanner=new Scanner (System.in);
         int numero[]= new int[12];
-        int contador=0, max=0,min=0;
+        int contador=0, mayor=0,menor=0;
         System.out.println("ingrese los numeros");
         for (int i = 0; i < numero.length; i++) {
-            numero[i]=t.nextInt();
+            numero[i]=TextoScanner.nextInt();
             int num;
             num=numero[0];
             if(num<numero[i]){
-                max=numero[i];
+                mayor=numero[i];
             }
             if(num>numero[i]){
-                min=numero[i];
+                menor=numero[i];
             }
             
             if(numero[i]%2==0&&numero[i]!=0){
@@ -25,8 +25,8 @@ public class primero {
             }
         }
         System.out.println("la cantidad de pares "+contador);
-        System.out.println("el numero mayor es "+max);
-        System.out.println("el numero menor es "+min);
+        System.out.println("el numero mayor es "+mayor);
+        System.out.println("el numero menor es "+menor);
     }
     
 }
