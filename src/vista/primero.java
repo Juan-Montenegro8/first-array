@@ -3,30 +3,35 @@ import java.util.*;
 public class primero {
 
     public static void main(String[] args) {
-        Scanner TextoScanner=new Scanner (System.in);
-        int numero[]= new int[12];
-        int contador=0, mayor=0,menor=0;
-        System.out.println("ingrese los numeros");
-        for (int i = 0; i < numero.length; i++) {
-            numero[i]=TextoScanner.nextInt();
-            int num;
-            num=numero[0];
-            if(num<numero[i]){
-                mayor=numero[i];
-            }
-            if(num>numero[i]){
-                menor=numero[i];
-            }
+
+        try (Scanner TextoScanner=new Scanner (System.in)){
             
-            if(numero[i]%2==0&&numero[i]!=0){
-                System.out.println("el numero es par ");
+            int numero[]= new int[12];
+            int contador=0, mayor=0,menor=0;
+            System.out.println("ingrese los numeros");
+            for (int i = 0; i < numero.length; i++) {
+                numero[i]=TextoScanner.nextInt();
+                int num;
+                num=numero[0];
+                if(num<numero[i]){
+                    mayor=numero[i];
+                }
+                if(num>numero[i]){
+                    menor=numero[i];
+                }
+            
+                if(numero[i]%2==0&&numero[i]!=0){
+                    System.out.println("el numero es par ");
                 
-                contador=1+contador;
+                    contador=1+contador;
+                }
             }
+            System.out.println("la cantidad de pares "+contador);
+            System.out.println("el numero mayor es "+mayor);
+            System.out.println("el numero menor es "+menor);    
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error "+e.getMessage());
         }
-        System.out.println("la cantidad de pares "+contador);
-        System.out.println("el numero mayor es "+mayor);
-        System.out.println("el numero menor es "+menor);
     }
     
 }
