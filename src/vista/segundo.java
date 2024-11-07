@@ -4,28 +4,16 @@ public class segundo {
 
     public static void main(String[] args) {
         Scanner t=new Scanner (System.in);
-        int inv[]=new int[15];
+        int invertido[]=new int[15];
         
         System.out.println("ingrese numeros");
-        for (int i = 0; i < inv.length; i++) {
-            inv[i]=t.nextInt();
+        for (int i = 0; i < invertido.length; i++) {
+            invertido[i]=t.nextInt();
         }
         System.out.println("******************la impresion**********************");
-        System.out.println(""+inv[14]);
-        System.out.println(""+inv[13]);
-        System.out.println(""+inv[12]);
-        System.out.println(""+inv[11]);
-        System.out.println(""+inv[10]);
-        System.out.println(""+inv[9]);
-        System.out.println(""+inv[8]);
-        System.out.println(""+inv[7]);
-        System.out.println(""+inv[6]);
-        System.out.println(""+inv[5]);
-        System.out.println(""+inv[4]);
-        System.out.println(""+inv[3]);
-        System.out.println(""+inv[2]);
-        System.out.println(""+inv[1]);
-        System.out.println(""+inv[0]);
+        for (int i = 0; i < invertido.length; i++) {
+            System.out.println(""+invertido[i]);
+        }
         
     }
     
