@@ -23,7 +23,7 @@ public class primero {
                 if(numero[i]%2==0&&numero[i]!=0){
                     System.out.println("el numero es par ");
                 
-                    contador=1+contador;
+                    contador=+1;
                 }
             }
             System.out.println("la cantidad de pares "+contador);
