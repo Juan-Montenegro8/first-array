@@ -1,24 +1,23 @@
 package vista;
 import java.util.*;
-import java.util.Scanner;
 
 public class tercero {
 
     public static void main(String[] args) {
         Scanner t=new Scanner (System.in);
-        int n,con=0;
+        int longitud,contador=0;
         System.out.println("ingrese longitud");
-        n=t.nextInt();
-        int numero[]= new int[n];
+        longitud=t.nextInt();
+        int numero[]= new int[longitud];
         System.out.println("ingrese numeros");
         for (int i = 0; i < numero.length; i++) {
             numero[i]=t.nextInt();
             if(numero[i]%3==0){
-                System.out.println("es multiplo de 3 y esta en la posicion es "+i);
-                con=1+con;
+                System.out.println(numero[i]+" Es multiplo de 3 y esta en la posicion es "+i);
+                contador=+1;
             }
         }
-        System.out.println("la cantidad de multiplos es "+con);
+        System.out.println("La cantidad de multiplos es "+contador);
     }
     
 }
