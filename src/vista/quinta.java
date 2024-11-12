@@ -6,34 +6,34 @@ public class quinta {
 
     public static void main(String[] args) {
         
-        int num[]=new int[3];
+        int vector1[]=new int[3];
         Random aleatorio1=new Random();
         int promedio1=0;
         System.out.println("****************************VECTOR 1*********************************");
-        for (int i = 0; i < num.length; i++) {
-            num[i]=aleatorio1.nextInt(11);
-            System.out.println("numero"+num[i]);
-            promedio1=num[0]+num[1]+num[2]/3;
+        for (int i = 0; i < vector1.length; i++) {
+            vector1[i]=aleatorio1.nextInt(11);
+            System.out.println("numero "+vector1[i]);
+            promedio1=vector1[0]+vector1[1]+vector1[2]/3;
         }
         
-        int num1[]=new int[3];
-        Random ale1=new Random();
+        int vector2[]=new int[3];
+        Random aleatorio2=new Random();
         int promedio2=0;
         System.out.println("****************************VECTOR 2*********************************");
-        for (int i = 0; i < num1.length; i++) {
-            num1[i]=ale1.nextInt(11);
-            System.out.println("numero"+num1[i]);
-            promedio2=num[0]+num[1]+num[2]/3;
+        for (int i = 0; i < vector2.length; i++) {
+            vector2[i]=aleatorio2.nextInt(11);
+            System.out.println("numero"+vector2[i]);
+            promedio2=vector1[0]+vector1[1]+vector1[2]/3;
         }
         
-        int num2[]=new int[3];
-        Random ale2=new Random();
+        int vector3[]=new int[3];
+        Random aleatorio3=new Random();
         int promedio3=0;
         System.out.println("****************************VECTOR 3*********************************");
-        for (int i = 0; i < num2.length; i++) {
-            num2[i]=ale2.nextInt(11);
-            System.out.println("numero"+num2[i]);
-            promedio3=num[0]+num[1]+num[2]/3;
+        for (int i = 0; i < vector3.length; i++) {
+            vector3[i]=aleatorio3.nextInt(11);
+            System.out.println("numero"+vector3[i]);
+            promedio3=vector1[0]+vector1[1]+vector1[2]/3;
         }
         
         if(promedio1<=promedio2){
