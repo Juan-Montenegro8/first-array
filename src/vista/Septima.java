@@ -1,13 +1,11 @@
 package vista;
 
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Septima {
 
     public static void main(String[] args) {
         
-        Scanner t=new Scanner (System.in);
         int num[]=new int[10];
         Random ale=new Random();
         int ja,a,b,c,d,e,f,g,h=0;
