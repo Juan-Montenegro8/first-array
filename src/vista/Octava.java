@@ -9,16 +9,20 @@ public class Octava {
         
         int vector[]=new int[10];
         Random ale=new Random();
-        int contenedor=0;
+        int mayor=0,repetido=0;
         for (int i = 1; i < vector.length; i++) {
             vector[i]=ale.nextInt(11);
             System.out.println("los numero son "+vector[i]);
-            if(contenedor<=vector[i]){
-                contenedor=vector[i];
+            if(mayor<=vector[i]){
+                mayor=vector[i];
             }
         }
-        
-        System.out.println("las veces que se repite el mayor es "+contenedor);
+        for (int i = 1; i < vector.length; i++){
+            if(mayor==vector[i]){
+                repetido+=1;
+            }
+        }
+        System.out.println("el numero mayor es "+ mayor+" y se repite "+repetido);
     }
     
 }
