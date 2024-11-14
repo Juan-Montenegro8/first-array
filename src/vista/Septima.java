@@ -1,28 +1,22 @@
 package vista;
 
-import java.util.*;
 
 public class Septima {
 
     public static void main(String[] args) {
-        
-        int num[]=new int[10];
-        Random ale=new Random();
-        int ja,a,b,c,d,e,f,g,h=0;
-        for (int i = 0; i < num.length; i++) {
-            num[i]=ale.nextInt(11);
-            System.out.println("numero"+num[i]);
+        int[] fibonacci = new int[10];
+
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
+
+        for (int i = 2; i < fibonacci.length; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
         }
-        ja=num[0]+num[1];
-            a=ja+num[2];
-            b=a+num[3];
-            c=b+num[4];
-            d=c+num[5];
-            e=d+num[6];
-            f=e+num[7];
-            g=f+num[8];
-            h=g+num[9];
-        System.out.println("el resultado es "+h);
+
+        System.out.println("Los primeros 10 elementos de la serie de Fibonacci son:");
+        for (int i = 0; i < fibonacci.length; i++) {
+            System.out.println("Posición " + i + ": " + fibonacci[i]);
+        }
     }
     
 }
