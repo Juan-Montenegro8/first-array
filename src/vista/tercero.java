@@ -4,20 +4,25 @@ import java.util.*;
 public class tercero {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner (System.in);
-        int longitud,contador=0;
-        System.out.println("ingrese longitud");
-        longitud=t.nextInt();
-        int numero[]= new int[longitud];
-        System.out.println("ingrese numeros");
-        for (int i = 0; i < numero.length; i++) {
-            numero[i]=t.nextInt();
-            if(numero[i]%3==0){
-                System.out.println(numero[i]+" Es multiplo de 3 y esta en la posicion es "+i);
-                contador=+1;
-            }
+        
+        try (Scanner textoScanner=new Scanner (System.in)){
+            int longitud,contador=0;
+            System.out.println("ingrese longitud");
+            longitud=textoScanner.nextInt();
+            int numero[]= new int[longitud];
+            System.out.println("ingrese numeros");
+            for (int i = 0; i < numero.length; i++) {
+                numero[i]=textoScanner.nextInt();
+                if(numero[i]%3==0){
+                    System.out.println(numero[i]+" Es multiplo de 3 y esta en la posicion es "+i);
+                    contador=+1;
+                }
+            }   
+            System.out.println("La cantidad de multiplos es "+contador);
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error "+e.getMessage());
         }
-        System.out.println("La cantidad de multiplos es "+contador);
+        
     }
     
 }
