@@ -1,37 +1,15 @@
 package vista;
 import java.util.*;
 public class Decima {
-
     public static void main(String[] args) {
-        
-        int num[]=new int[10];
-        Random ale=new Random();
-        int o=0;
-        for (int i = 0; i < num.length; i++) {
-            num[i]=ale.nextInt(11);
-            System.out.println("numero "+num[i]);
-            if(num[0]<num[i]&&num[i]!=10){
-               o=i; 
-            }
-        }
-        System.out.println("la posisicion del numero cuya suma de digitos mas grande es "+o);
-    }
-    
-}
-//Leer 10 números enteros, almacenarlos en un vector y determinar en qué posición está el número cuya suma de 
-//dígitos sea la mayor.
-public class SumaDigitosMayor {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         int[] numeros = new int[10];
         int posicionMayor = 0;
         int sumaMayor = 0;
+        Random aleatorio=new Random();
 
-        // Leer los números y calcular la suma de los dígitos
-        System.out.println("Ingrese 10 números enteros:");
         for (int i = 0; i < numeros.length; i++) {
             System.out.print("Número " + (i + 1) + ": ");
-            numeros[i] = scanner.nextInt();
+            numeros[i] = aleatorio.nextInt();
 
             int sumaDigitos = sumaDeDigitos(numeros[i]);
             if (sumaDigitos > sumaMayor) {
@@ -55,3 +33,7 @@ public class SumaDigitosMayor {
         return suma;
     }
 }
+
+//Leer 10 números enteros, almacenarlos en un vector y determinar en qué posición está el número cuya suma de 
+//dígitos sea la mayor.
+
